@@ -1,18 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forums</title>
+    </head>
+    <body>
+        <form action="#">
+            <fieldset>
+                <legend>Customer Details</legend>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forums</title>
-</head>
+                <p>
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="George" tabindex="1" autofocus>
+                </p>
 
-<body>
-    <form action="#">
-        <fieldset>
-            <legend>Customer Details</legend>
-        </fieldset>
-    </form>
-</body>
+                <p>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Devis">
+                </p>
 
+                <p>
+                    <label for="gender">Gender:</label>
+
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male">
+
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female">
+
+                    <label for="other">Other</label>
+                    <input type="radio" name="gender" id="other">
+                </p>
+
+                <p>
+                    <label for="contact">Preferred contact method:</label>
+
+                    <label for="email">Email</label>
+                    <input type="radio" name="contact" id="contact-email">
+
+                    <label for="phone">Phone</label>
+                    <input type="radio" name="contact" id="contact-phone">
+                </p>
+
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="your@email.com">
+                </p>
+
+                <p>
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" placeholder="+359885236225">
+                </p>
+
+                <p>
+                    <label for="city">Town</label>
+                    <select name="city" id="city">
+                        <option value="varna">Varna</option>
+                        <option value="plovdiv">Plovdiv</option>
+                        <option value="burgas">Burgas</option>
+                        <option value="sofia">Sofia</option>
+                        <option value="pleven">Pleven</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="age">Age</label>
+                    <input type="number" min="18" max="70">
+                </p>
+
+                <p>
+                    <label for="language">Programming language</label>
+                    <input list="languages" name="language" id="language">
+
+                    <datalist id="languages">
+                        <option value="Java">
+                        <option value="PHP">
+                        <option value="C#">
+                        <option value="JavaScript">
+                        <option value="Python">
+                        <option value="Ruby">
+                        <option value="Other">
+                    </datalist>
+                </p>
+
+                <p>
+                    <textarea name="info" id="info" cols="20" rows="5" placeholder="More information..."></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="terms" checked>
+                    <label for="terms">I agree the Terms and Conditions</label>
+                </p>
+
+                <p>
+                    <input type="submit" value="Send">
+                </p>
+            </fieldset>
+        </form>
+    </body>
 </html>
