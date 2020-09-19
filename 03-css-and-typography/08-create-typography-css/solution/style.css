@@ -45,3 +45,22 @@ blockquote {
     border-left: 3px solid rgb(221, 221, 221);
     font-style: italic;
 }
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+thead tr {
+    font-weight: bold;
+    background: #cccccc;
+}
+
+tbody tr:nth-child(odd) {
+    background: #f1f1f1;
+}
+
+tbody td {
+    border: 1px solid #cccccc;
+}
