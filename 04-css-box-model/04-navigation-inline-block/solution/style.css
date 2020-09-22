@@ -1,0 +1,33 @@
+html {
+    font: 16px/1.2 Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: 1em/1.2 Georgia, serif;
+}
+
+main {
+    border-top: 2px solid #333;
+}
+
+body>header {
+    margin-bottom: 2rem;
+}
+
+body>header>nav a {
+    display: inline-block;
+}
+
+.site-title {
+    margin-right: 6rem;
+}
+
+.site-title, .site-navigation {
+    display: inline-block;
+}
+
+.site-navigation a {
+    margin: 0.5rem 1rem;
+    text-decoration: none;
+    color: #009900;
+}
