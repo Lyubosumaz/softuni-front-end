@@ -1,0 +1,13 @@
+section {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    border: 0.5rem dashed #23ca85;
+}
+
+p {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    border: 0.5rem solid #0936ca;
+}
