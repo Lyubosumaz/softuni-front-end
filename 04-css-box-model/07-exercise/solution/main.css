@@ -1,0 +1,111 @@
+.site-promotion {
+    padding: 14rem 0;
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('img/header-flowers.jpg') top center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+.site-promotion h1, .site-promotion p, .site-info p {
+    width: 46.25rem;
+    margin: 0 auto;
+}
+
+.site-promotion p, .site-info p, .site-info button, .site-utilities-card p {
+    font-size: 1.25rem;
+}
+
+.site-promotion h1 {
+    text-shadow: 2px 2px 2px #333;
+    letter-spacing: 2px;
+}
+
+.site-info {
+    padding: 2rem 0 3rem 0;
+    background: #ff7f50;
+    color: #fff;
+    text-align: center;
+}
+
+.site-info h2 {
+    text-transform: uppercase;
+}
+
+.site-info p {
+    margin-bottom: 3rem;
+}
+
+.site-info button {
+    padding: 0.5em 0.8em;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #ff7f50;
+    cursor: pointer;
+}
+
+.site-info button:hover, .site-info button:active, .site-info button:focus {
+    background: #ff7f50;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.site-utilities {
+    width: 70%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    text-align: center;
+    color: #333;
+}
+
+.site-utilities-card {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.site-utilities-card img {
+    width: 7em;
+    height: auto;
+}
+
+.site-utilities-card h3 {
+    padding: 0.5em;
+}
+
+.site-utilities-card p {
+    width: 16em;
+    margin: 0 auto;
+}
+
+.site-gallery {
+    padding: 3em 0 1em 0;
+    background: #fff2ed;
+    text-align: center;
+}
+
+.site-gallery ul {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.site-gallery li {
+    width: 31.745%;
+    margin-bottom: 1.5rem;
+    padding: 1em;
+    border: 3px solid #000;
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.site-gallery li:not(:nth-child(3n+3)) {
+    margin-right: 2em;
+}
+
+.site-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

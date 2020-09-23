@@ -1,86 +1,55 @@
 @import url('reset.css');
 @import url('header.css');
-.site-promotion {
-    padding: 12rem 0;
-    background: linear-gradient(to right top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('img/header-flowers.jpg') center center;
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-}
-
-.site-promotion h1, .site-promotion p, .site-info p {
-    width: 46.25rem;
-    margin: 0 auto;
-}
-
-.site-promotion p, .site-info p, .site-info button, .site-utilities-card p {
-    font-size: 1.25rem;
-}
-
-.site-promotion h1 {
-    text-shadow: 2px 2px 2px #333;
-    letter-spacing: 2px;
-}
-
-.site-info {
-    padding: 2rem 0 3rem 0;
+@import url('main.css');
+.site-footer {
     background: #ff7f50;
     color: #fff;
-    text-align: center;
 }
 
-.site-info h2 {
-    text-transform: uppercase;
-}
-
-.site-info p {
-    margin-bottom: 3rem;
-}
-
-.site-info button {
-    padding: 0.5em 0.8em;
-    background: #fff;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    font-weight: bold;
-    color: #ff7f50;
-    cursor: pointer;
-}
-
-.site-info button:hover, .site-info button:active, .site-info button:focus {
-    background: #ff7f50;
-    color: #fff;
-    border: 2px solid #fff;
-}
-
-.site-utilities {
-    width: 70%;
-    margin: 0 auto;
-    padding: 3rem 0;
-    text-align: center;
-    color: #333;
-}
-
-.site-utilities-card {
-    width: 33%;
+.site-footer p, .site-footer ul {
+    padding: 0;
     display: inline-block;
-    vertical-align: top;
 }
 
-.site-utilities-card img {
-    width: 7em;
-    height: auto;
+.site-footer p {
+    margin: 1em 6em 1em 35%;
+    vertical-align: middle;
 }
 
-.site-utilities-card h3 {
-    padding: 0.5em;
+.site-footer li {
+    width: 1.75rem;
+    height: 1.75rem;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    border: 1px solid #fff;
+    border-radius: 50%;
 }
 
-.site-utilities-card p {
-    width: 16em;
-    margin: 0 auto;
+.site-footer li:not(:last-child) {
+    margin-right: 0.3em;
 }
 
-.site-gallery {
-    background: #fff2ed;
+.site-footer li a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: #fff;
+}
+
+.site-footer li a:after {
+    display: inline-block;
+    font-family: 'Font Awesome\ 5 Brands';
+    content: '\f09a';
+    font-weight: 900;
+}
+
+.site-footer li:nth-child(2) a:after {
+    content: '\f099';
+}
+
+.site-footer li:nth-child(3) a:after {
+    content: '\f09b';
 }

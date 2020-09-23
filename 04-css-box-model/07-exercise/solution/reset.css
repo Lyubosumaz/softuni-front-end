@@ -44,3 +44,7 @@ h6 {
 p, ul, ol {
     padding-bottom: 1rem;
 }
+
+li {
+    list-style-type: none;
+}
