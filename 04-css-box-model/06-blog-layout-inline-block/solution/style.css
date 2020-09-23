@@ -9,3 +9,16 @@ img {
     width: 75%;
     height: auto;
 }
+
+.site-article, .site-sidebar {
+    display: inline-block;
+}
+
+.site-article {
+    width: 70%;
+}
+
+.site-sidebar {
+    width: 29%;
+    vertical-align: top;
+}
