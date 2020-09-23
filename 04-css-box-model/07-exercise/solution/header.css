@@ -1,5 +1,5 @@
-
 .site-header {
+    padding-bottom: 1rem;
     background: #f1f5f8;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .site-header nav {
-    padding: 0.469rem 0;
+    padding-top: 1rem;
     vertical-align: top;
 }
 
@@ -31,7 +31,7 @@
 
 .site-header nav li a {
     padding: 0.2rem 0.5rem;
-    font-size: 1.375rem;
+    font-size: 1.1rem;
     color: #fff;
     border-radius: 5px;
     background: #ff7f50;
