@@ -1,0 +1,80 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font: 16px/1.5 Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body, input, textarea, option, select, table, form {
+    font: inherit;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+p, ul, ol {
+    padding-bottom: 1rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Layouts */
+
+body {
+    width: 45%;
+    margin: 0 auto;
+    background: #eee;
+}
+
+.site-title-but-judge-is-shit {
+    border-bottom: 2px solid #000;
+    margin: 2em 0 1em 0;
+}
+
+.site-title {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.entry, .entry-title {
+    margin-bottom: 1rem;
+}
+
+.site-content img {
+    padding: 0.5em;
+    border: 3px solid #000;
+    box-shadow: 0em 0em 1em 0.5em rgba(0, 0, 0, 0.2);
+    background: #fff;
+}
+
+article.main-article img, article.secondary-article .entry-quotes {
+    margin: 0 0 1em 1em;
+    float: right;
+}
+
+article.secondary-article img {
+    margin: 0 1em 1em 0;
+    float: left;
+}
+
+.entry-quotes {
+    width: 49%;
+    padding-left: 1.5em;
+    border-left: 3px solid #ddd;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.entry-quotes p:last-child {
+    text-align: right;
+}
