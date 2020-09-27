@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+.viewport {
+    height: 50vh;
+    position: relative;
+    background: firebrick;
+    border-bottom: 2px solid #000;
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    position: absolute;
+    background: #55f;
+}
