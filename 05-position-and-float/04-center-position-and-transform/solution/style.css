@@ -1,0 +1,77 @@
+/* Testing Chrome addon PerfectPixel, but the css is not nice */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: 1em/1.2 Georgia, serif;
+}
+
+body {
+    background: rgb(238, 238, 238);
+}
+
+.card {
+    width: 36em;
+    height: 36em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    background: rgb(255, 255, 255);
+    border-radius: 0.5em;
+    box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.2);
+}
+
+.card-media {
+    padding-bottom: 20.3em;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.card-media img {
+    width: 100%;
+    position: absolute;
+}
+
+.card-content {
+    height: 10.75em;
+    padding: 1.5em 1.8em;
+    position: relative;
+    font-size: 22px;
+}
+
+.card-content-title {
+    margin-bottom: 0.5em;
+    font: bold 1em/1.2 Georgia, serif;
+    font-size: 26px;
+}
+
+.card-content-button {
+    font-size: 20px;
+    padding: 0.4em 0.7em;
+    position: absolute;
+    bottom: 1.2em;
+    right: 2em;
+    border: 5px solid #029900;
+    border-radius: 0.2em;
+    background: #029900;
+    color: rgb(255, 255, 255);
+}
+
+.card-content-button:hover {
+    color: #029900;
+    background: rgb(255, 255, 255);
+}
