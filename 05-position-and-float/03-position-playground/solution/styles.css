@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+.viewport {
+    width: 90em;
+    height: 50vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.viewport.v1 {
+    background: linear-gradient(to left, rgba(67, 206, 162, 1), rgba(24, 90, 157, 1));
+}
+
+.viewport.v2 {
+    background: linear-gradient(to right, rgba(168, 50, 121, 1), rgba(211, 131, 18, 1));
+}
+
+.card {
+    width: 20%;
+    max-height: 44vh;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #55f;
+    border-radius: 0.5em;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.card:before, .card:after {
+    display: block;
+    content: '';
+}
+
+.card.ar-9x16:before {
+    padding-top: 177.77%;
+}
+
+.card.ar-16x9:before {
+    padding-top: 56.25%;
+}
+
+.card:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to top left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+    transition: opacity 0.3s ease-in;
+}
+
+.card:hover:after {
+    opacity: 0;
+}
+
+.card .card-media {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+.card .landscape {
+    width: 100%;
+    height: auto;
+}
+
+.card .portrait {
+    width: 100%;
+    height: 100%;
+}
+
+.card-media-icon {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.4em;
+    color: #fff;
+}
