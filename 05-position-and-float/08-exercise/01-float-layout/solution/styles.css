@@ -8,6 +8,43 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.cleaner:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.site-title, .site-footer {
+    text-align: center;
+    padding: 1.5em;
+}
+
 .site-title, .site-main, .site-sidebar, .site-footer {
     border: 1px solid #000;
+}
+
+.site-main, .site-sidebar {
+    float: left;
+    padding: 1.5em;
+}
+
+.site-main {
+    width: 70%;
+}
+
+.site-main p {
+    margin-bottom: 1em;
+}
+
+.site-sidebar {
+    width: 30%;
+}
+
+.site-sidebar section {
+    margin-bottom: 4em;
 }
