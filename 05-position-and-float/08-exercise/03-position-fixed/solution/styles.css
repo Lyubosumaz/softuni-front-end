@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font: 20px/1.5 Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 0 3em;
+}
+
+p {
+    padding-bottom: 1em;
+}
+
+.container {
+    padding-top: 6em;
+}
+
+.fixed {
+    width: 100%;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    background: #0f0;
+    opacity: 0.3;
+    font-size: 30px;
+    color: #fff;
+}
