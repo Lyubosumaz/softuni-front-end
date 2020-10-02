@@ -1,0 +1,50 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font: 16px/1.5 Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+div, section {
+    display: flex;
+}
+
+span {
+    border: 1px solid #000;
+}
+
+.container {
+    max-width: 65vw;
+    min-height: 30vw;
+    margin: 0 auto;
+    text-align: center;
+    align-items: stretch;
+}
+
+.week {
+    flex-wrap: wrap;
+}
+
+.week span {
+}
+
+.week .period {
+    flex: 1 1 100%;
+}
+
+.week .day {
+    flex: 1 1 20%;
+}
+
+.notes {
+    flex-direction: column;
+    flex: 1 1 40%;
+}
+
+.notes>span {
+    flex: 1 1 auto;
+}
