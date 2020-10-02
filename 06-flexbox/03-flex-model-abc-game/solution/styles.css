@@ -1,0 +1,43 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font: 20px/1.5 Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* requirements of this problem are bullshit */
+
+.container {
+    max-width: 15vh;
+    height: 35rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span {
+    padding: 0.5em 1.2em;
+    border: 1px solid #000;
+    order: 20;
+}
+
+span:nth-child(11) {
+    order: 1;
+}
+
+span:nth-child(1) {
+    order: 2;
+}
+
+span:nth-child(2) {
+    order: 3;
+}
+
+span:nth-child(3) {
+    order: 4;
+}
