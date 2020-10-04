@@ -1,9 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
 .site {}
 
-.site-header {}
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
 
-.site-title {}
+.site-title {
+    text-transform: uppercase;
+    font-size: 40px;
+}
 
-.site-navigation {}
+.site-navigation {
+    display: flex;
+}
+
+.site-navigation ul {
+    display: flex;
+}
+
+.site-navigation li {
+    padding: 0.1em 1.2em;
+    display: flex;
+    list-style: none outside;
+}
+
+.site-navigation a {
+    text-decoration: none;
+    color: rgb(0, 153, 0);
+}
 
 .site-main {}
