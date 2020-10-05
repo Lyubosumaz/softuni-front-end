@@ -1,8 +1,9 @@
 /* Reset */
 
-* {
+*, *::after, *::before {
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
 }
 
 html {
@@ -14,12 +15,15 @@ blockquote, h1, h2, h3, h4, h5, h6 {
     font: 1em/1.2 Georgia, serif;
 }
 
+h1 { font-size: 2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
+
 body, input, textarea, option, select, table, form {
     font: inherit;
-}
-
-*, *:after, *:before {
-    box-sizing: inherit;
 }
 
 p {
@@ -29,12 +33,12 @@ p {
 /* Layouts */
 
 body {
-    width: 56.25%;
+    width: 55%;
     margin: 0 auto;
     background: rgb(238, 238, 238);
 }
 
-.site-title-but-judge-is-shit {
+.site-header {
     border-bottom: 3px solid rgb(0, 0, 0);
     margin: 2em 0 1em 0;
 }
@@ -50,11 +54,11 @@ body {
     margin-bottom: 1rem;
 }
 
-.site-content, .site-sidebar {
-    float: left;
+.page {
+    display: flex;
 }
 
-.site-content {
+.container {
     width: 75%;
     margin-right: 5%;
 }
@@ -63,7 +67,7 @@ body {
     width: 20%;
 }
 
-.site-content img {
+.container img {
     padding: 0.5em;
     border: 3px solid rgb(0, 0, 0);
     background: rgb(255, 255, 255);
@@ -85,7 +89,7 @@ article.secondary-article img {
     padding-left: 1.5em;
     border-left: 3px solid #ddd;
     font-style: italic;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.75);
 }
 
 .entry-quotes p:last-child {
@@ -100,6 +104,6 @@ article.secondary-article img {
 }
 
 .site-sidebar a {
-    color: rgb(0, 102, 0);
+    color: rgb(0, 153, 0);
     text-decoration: none;
 }
