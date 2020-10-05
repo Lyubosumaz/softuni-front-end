@@ -1,0 +1,35 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font: 16px/1.5 Georgia, serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(238, 238, 238);
+}
+
+div.card {
+    padding: 1rem;
+    max-width: 26rem;
+    background: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 2rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+div.card header {
+    padding-bottom: 0.5rem;
+}
+
+div.card main {
+    padding-bottom: 1rem;
+}
