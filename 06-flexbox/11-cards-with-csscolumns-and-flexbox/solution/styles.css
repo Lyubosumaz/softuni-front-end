@@ -1,0 +1,49 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font: 16px/1.5 Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 60%;
+    margin: 0 auto;
+    background: rgb(238, 238, 238);
+}
+
+.cards-layout.masonry {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards-layout.flex {}
+
+.card {
+    flex: 0 0 26%;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.card-media {}
+
+.card-media img {
+    width: 100%;
+    height: auto;
+}
+
+.card-main {
+    padding: 2em;
+}
+
+.card-header {}
+
+.card-text {}
+
+.card-footer {}
