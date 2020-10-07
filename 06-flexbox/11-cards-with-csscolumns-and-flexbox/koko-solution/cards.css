@@ -16,38 +16,20 @@
     flex: 0 0 31%;
 }
 
-.cards-list.layout-masonry {
-    column-count: 3;
-    column-gap: 20px;
-}
-
-.cards-list.layout-masonry .card {
-    display: inline-block;
-}
-
-.card {
-    border: 1px solid #666;
-    border-radius: 0.3em;
-    overflow: hidden;
-    margin-bottom: 3%;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-media {
+.cards-list.layout-flexbox .card-media {
     margin: 0.5em;
     position: relative;
     overflow: hidden;
     border-radius: 0.3em;
 }
 
-.card-media::before {
+.cards-list.layout-flexbox .card-media::before {
     display: block;
     content: '';
     padding-top: 56.25%;
 }
 
-.card-media::after {
+.cards-list.layout-flexbox .card-media::after {
     display: block;
     content: '';
     position: absolute;
@@ -59,7 +41,7 @@
     border-radius: 0.3em;
 }
 
-.card-media img {
+.cards-list.layout-flexbox .card-media img {
     width: 100%;
     height: auto;
     display: block;
@@ -67,6 +49,63 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* Masonry Layout */
+
+.cards-list.layout-masonry {
+    column-count: 3;
+    column-gap: 1em;
+}
+
+.cards-list.layout-masonry .card {
+    display: inline-block;
+    break-inside: avoid;
+}
+
+.card {
+    border: 1px solid #666;
+    border-radius: 0.3em;
+    overflow: hidden;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-list.layout-masonry .card-media {
+    margin: 0.5em;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.3em;
+}
+
+/* .cards-list.layout-masonry .card-media::before {
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+} */
+
+.cards-list.layout-masonry .card-media::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #000;
+    border-radius: 0.3em;
+}
+
+.cards-list.layout-masonry .card-media img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .card-header {
