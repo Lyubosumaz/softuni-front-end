@@ -65,19 +65,15 @@ fieldset {
     align-items: flex-start;
 }
 
-.sections input,
-.sections select {
+.sections > input,
+.sections > select,
+.sections > textarea {
+    width: 50%;
+    border: 1px solid #a9a9a9;
     padding: 0.5em;
 }
 
-.sections input,
-.sections select,
-.sections textarea {
-    width: 50%;
-    border: 1px solid #a9a9a9;
-}
-
-.sections label {
+.sections > label {
     min-width: 6.5em;
 }
 
@@ -86,17 +82,29 @@ fieldset {
     color: #234465;
     text-align: center;
     font-weight: 400;
+    margin-bottom: 1em;
 }
 
 .form-gender ul {
     display: flex;
 }
 
-.form-city {
+.form-gender li {
+    display: flex;
+    align-items: center;
+}
+
+.form-gender li:first-child {
+    margin-right: 1em;
+}
+
+.form-gender li input {
+    margin-right: 0.5em;
 }
 
 .form-term-conditions {
     color: #234465;
+    margin-top: 1em;
 }
 
 .form-submit {
@@ -105,9 +113,12 @@ fieldset {
 }
 
 .form-submit input[type="submit"] {
-    padding: 0.5em 2em;
+    padding: 1rem 3.5rem;
     border: 3px solid #234465;
     background: #234465;
     color: #fff;
     border-radius: 0.3em;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1em;
 }
