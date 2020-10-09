@@ -10,30 +10,38 @@
     </head>
     <body>
         <div class="content">
-            <form action="#">
+            <form action="#" method="GET" class="border-curve">
                 <fieldset>
-                    <p class="form-title">
-                        <h1>Sign In With</h1>
-                    </p>
+                    <div class="form-container">
+                        <header class="form-title">
+                            <p>Sign In With</p>
+                        </header>
 
-                    <p class="form-social">
-                        <button>Facebook</button>
-                        <button>Google</button>
-                    </p>
+                        <section class="form-social">
+                            <button class="btn-facebook border-curve">
+                                <i class="fab fa-facebook-square"></i>
+                                <span>Facebook</span>
+                            </button>
+                            <button class="btn-google border-curve">
+                                <i class="fab fa-google"></i>
+                                <span> Google </span>
+                            </button>
+                        </section>
 
-                    <p class="form-username">
-                        <label for="username">Username</label>
-                        <input type="text" name="username" id="username" />
-                    </p>
+                        <section class="form-field">
+                            <label for="username">Username</label>
+                            <input class="border-curve" type="text" name="username" id="username" />
+                        </section>
 
-                    <p class="form-password">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" />
-                    </p>
+                        <section class="form-field">
+                            <label for="password">Password</label>
+                            <input class="border-curve" type="password" name="password" id="password" />
+                        </section>
 
-                    <p class="form-action">
-                        <input type="submit" value="Sign in" />
-                    </p>
+                        <section class="form-action">
+                            <input class="border-curve" type="submit" value="Sign in" />
+                        </section>
+                    </div>
                 </fieldset>
             </form>
         </div>
