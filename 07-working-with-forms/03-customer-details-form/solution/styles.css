@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -21,6 +23,10 @@ option {
     font: inherit;
 }
 
+ul {
+    list-style: none outside;
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -29,5 +35,79 @@ body {
 }
 
 form {
+    width: 40em;
+    height: 50em;
+    padding: 2em;
     background: rgb(173, 216, 230);
+}
+
+fieldset {
+    border: none;
+}
+
+.form-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sections {
+    width: 100%;
+    margin-left: 2em;
+    display: flex;
+    color: #234465;
+    align-items: center;
+}
+
+.sections.form-message {
+    align-items: flex-start;
+}
+
+.sections input,
+.sections select {
+    padding: 0.5em;
+}
+
+.sections input,
+.sections select,
+.sections textarea {
+    width: 50%;
+    border: 1px solid #a9a9a9;
+}
+
+.sections label {
+    min-width: 6.5em;
+}
+
+.form-header {
+    font-family: "PT Serif", serif;
+    color: #234465;
+    text-align: center;
+    font-weight: 400;
+}
+
+.form-gender ul {
+    display: flex;
+}
+
+.form-city {
+}
+
+.form-term-conditions {
+    color: #234465;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.form-submit input[type="submit"] {
+    padding: 0.5em 2em;
+    border: 3px solid #234465;
+    background: #234465;
+    color: #fff;
+    border-radius: 0.3em;
 }

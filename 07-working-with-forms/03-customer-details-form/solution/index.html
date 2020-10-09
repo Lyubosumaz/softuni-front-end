@@ -8,79 +8,83 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <form action="#">
+        <form action="#" method="GET">
             <fieldset>
-                <legend></legend>
+                <div class="form-container">
+                    <header class="form-header">
+                        <h1>Customer Details</h1>
+                    </header>
 
-                <div>
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name" placeholder="George" required />
-                </div>
+                    <div class="sections form-first-name">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="George" required />
+                    </div>
 
-                <div>
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="last-name" id="last-name" placeholder="Devis" required />
-                </div>
+                    <div class="sections form-last-name">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Devis" required />
+                    </div>
 
-                <div>
-                    <label>Gender</label>
-                    <ul>
-                        <li>
-                            <input type="radio" name="gender" id="male" value="male" />
-                            <label for="male">Male</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="female" id="female" value="female" />
-                            <label for="female">Female</label>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="sections form-gender">
+                        <label>Gender</label>
+                        <ul>
+                            <li>
+                                <input type="radio" name="gender" id="male" value="male" />
+                                <label for="male">Male</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="female" id="female" value="female" />
+                                <label for="female">Female</label>
+                            </li>
+                        </ul>
+                    </div>
 
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="your@email.com" />
-                </div>
+                    <div class="sections form-email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="your@email.com" />
+                    </div>
 
-                <div>
-                    <label for="phone">Phone</label>
-                    <input type="text" name="phone" id="phone" placeholder="+35988523225" />
-                </div>
+                    <div class="sections form-phone">
+                        <label for="phone">Phone</label>
+                        <input type="text" name="phone" id="phone" placeholder="+35988523225" />
+                    </div>
 
-                <div>
-                    <label>Town</label>
-                    <select name="city" id="city">
-                        <option value="varna">Varna</option>
-                        <option value="sofia">Sofia</option>
-                        <option value="plovdiv">Plovdiv</option>
-                        <option value="stara-zagora">Stara Zagora</option>
-                        <option value="burgas">Burgas</option>
-                        <option value="veliko-turnovo">Veliko Turnovo</option>
-                        <option value="lovech">Lovech</option>
-                    </select>
-                </div>
+                    <div class="sections form-city">
+                        <label>Town</label>
+                        <select name="city" id="city">
+                            <option value="varna">Varna</option>
+                            <option value="sofia">Sofia</option>
+                            <option value="plovdiv">Plovdiv</option>
+                            <option value="stara-zagora">Stara Zagora</option>
+                            <option value="burgas">Burgas</option>
+                            <option value="veliko-turnovo">Veliko Turnovo</option>
+                            <option value="lovech">Lovech</option>
+                        </select>
+                    </div>
 
-                <div>
-                    <label for="age">Age</label>
-                    <input type="number" name="age" id="age" />
-                </div>
+                    <div class="sections form-age">
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age" />
+                    </div>
 
-                <div>
-                    <label for="language">Language</label>
-                    <input type="text" name="language" id="language" />
-                </div>
+                    <div class="sections form-language">
+                        <label for="language">Language</label>
+                        <input type="text" name="language" id="language" />
+                    </div>
 
-                <div>
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="35" rows="5" placeholder="More information..."></textarea>
-                </div>
+                    <div class="sections form-message">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="35" rows="5" placeholder="More information..."></textarea>
+                    </div>
 
-                <div>
-                    <input type="checkbox" name="terms-conditions" id="terms-conditions" />
-                    <label for="terms-conditions">I agree the Terms and Conditions</label>
-                </div>
+                    <div class="form-term-conditions">
+                        <input type="checkbox" name="terms-conditions" id="terms-conditions" />
+                        <label for="terms-conditions">I agree the Terms and Conditions</label>
+                    </div>
 
-                <div>
-                    <input type="submit" value="Send" />
+                    <div class="form-submit">
+                        <input type="submit" value="Send" />
+                    </div>
                 </div>
             </fieldset>
         </form>
