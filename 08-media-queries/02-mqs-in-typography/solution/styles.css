@@ -59,7 +59,7 @@ p {
 /* Layouts */
 
 body {
-    width: 55%;
+    width: 90%;
     margin: 0 auto;
     background: rgb(238, 238, 238);
 }
@@ -113,4 +113,23 @@ article.secondary-article img {
 
 .entry-quotes p:last-child {
     text-align: right;
+}
+
+@media (min-width: 1025px) {
+    body {
+        width: 55%;
+    }
+}
+
+@media (max-width: 425px) {
+    article.main-article img,
+    article.secondary-article img,
+    article.secondary-article .entry-quotes {
+        float: none;
+    }
+
+    article.main-article img,
+    article.secondary-article img {
+        margin: 0 0 1em 0;
+    }
 }
