@@ -23,8 +23,12 @@ form {
     font: inherit;
 }
 
+ul {
+    list-style: none outside;
+}
+
 p {
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 
 /* Layouts */
@@ -38,6 +42,10 @@ body {
 .site-header {
     border-bottom: 3px solid rgb(0, 0, 0);
     margin: 2em 0 1em 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 1em 1em;
+    flex-wrap: wrap;
 }
 
 .site-title {
@@ -47,8 +55,79 @@ body {
     text-transform: uppercase;
 }
 
+.x-menu {
+    display: none;
+    text-align: center;
+    margin: 2.5em 0 1.5em 0;
+}
+
+.nav {
+    display: flex;
+    background: #fff;
+    align-items: center;
+    border-radius: 0.5em;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav li {
+    border-radius: 0.5em;
+    background: #2d2d2d;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+}
+
+.nav li + li {
+    margin: 0.5em 0.5em 0.5em 0;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
 @media (min-width: 1025px) {
     body {
         width: 55%;
+    }
+}
+
+@media (max-width: 425px) {
+    .site-title {
+        text-align: center;
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        padding: 0;
+    }
+
+    .nav,
+    .x-menu {
+        flex: 1 0 100%;
+    }
+
+    .x-menu {
+        display: block;
+    }
+
+    .nav ul {
+        border-top: 3px solid rgb(0, 0, 0);
+        display: block;
+        flex-basis: 100%;
+    }
+
+    .nav li {
+        flex: 1 0 100%;
+        margin: 0.5em;
+    }
+
+    .nav li + li {
+        margin: 0 0.5em 0.5em 0.5em;
     }
 }
