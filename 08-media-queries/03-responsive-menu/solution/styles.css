@@ -1,0 +1,54 @@
+/* Reset */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font: 16px/1.5 Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body,
+input,
+textarea,
+option,
+select,
+table,
+form {
+    font: inherit;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+/* Layouts */
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    background: rgb(238, 238, 238);
+}
+
+.site-header {
+    border-bottom: 3px solid rgb(0, 0, 0);
+    margin: 2em 0 1em 0;
+}
+
+.site-title {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media (min-width: 1025px) {
+    body {
+        width: 55%;
+    }
+}
