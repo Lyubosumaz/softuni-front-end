@@ -1,0 +1,9 @@
+.site-sidebar ul {
+    padding: 0 0 1rem 2rem;
+    list-style-type: square;
+}
+
+.site-sidebar a {
+    color: rgb(0, 102, 0);
+    text-decoration: none;
+}
