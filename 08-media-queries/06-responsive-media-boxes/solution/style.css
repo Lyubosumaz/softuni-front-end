@@ -27,8 +27,65 @@ body {
 
 .card {
     background: rgb(255, 255, 255);
+    max-width: 28em;
+    margin: 5em;
+    box-shadow: 0 0 1em 0.175em rgba(0, 0, 0, 0.25);
+}
+
+.card,
+button {
+    border-radius: 0.3em;
+    overflow: hidden;
+}
+
+.card-media {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-media::before {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+}
+
+.card-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-container {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    font-size: 18px;
+}
+
+.card-header h1 {
+    font-weight: bold;
+}
+
+.card-header,
+.card-main {
+    margin-bottom: 0.5em;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
 }
 
 button {
+    padding: 0.5em 1em;
+    color: rgb(255, 255, 255);
+    border: none;
     background: rgb(0, 153, 0);
 }
