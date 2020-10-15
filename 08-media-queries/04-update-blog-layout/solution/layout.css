@@ -7,6 +7,10 @@ body {
 .site-header {
     border-bottom: 3px solid rgb(0, 0, 0);
     margin: 2em 0 1em 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 1em 1em;
+    flex-wrap: wrap;
 }
 
 .site-title {
@@ -16,8 +20,20 @@ body {
     text-transform: uppercase;
 }
 
-.page {
+.site-main {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.site-main img {
+    padding: 0.5em;
+    border: 3px solid rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 1em 0.25em rgba(0, 0, 0, 0.25);
+}
+
+.site-content {
+    flex: 1 0 60%;
 }
 
 .entry,
@@ -25,15 +41,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.container img {
-    padding: 0.5em;
-    border: 3px solid rgb(0, 0, 0);
-    background: rgb(255, 255, 255);
-    box-shadow: 0 0 1em 0.25em rgba(0, 0, 0, 0.25);
-}
-
-article.main-article img,
-article.secondary-article .entry-quotes {
+article.main-article img {
     margin: 0 0 1em 1em;
     float: right;
 }
@@ -45,6 +53,7 @@ article.secondary-article img {
 
 .entry-quotes {
     width: 49%;
+    margin: 0 0 1em 3em;
     padding-left: 1.5em;
     border-left: 3px solid #ddd;
     font-style: italic;
@@ -53,6 +62,19 @@ article.secondary-article img {
 
 .entry-quotes p:last-child {
     text-align: right;
+}
+
+.site-sidebar {
+    margin-left: 6%;
+    flex: 1 0 14%;
+}
+
+@media (min-width: 768px) {
+    .site-content,
+    .site-sidebar {
+        display: block;
+        flex-basis: 100%;
+    }
 }
 
 @media (min-width: 1025px) {
