@@ -1,5 +1,64 @@
+/* Reset */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font: 16px/1.5 Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font: 1em/1.2 Georgia, serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.8em;
+}
+h3 {
+    font-size: 1.6em;
+}
+h4 {
+    font-size: 1.4em;
+}
+h5 {
+    font-size: 1.2em;
+}
+h6 {
+    font-size: 1em;
+}
+
+body,
+input,
+textarea,
+option,
+select,
+table,
+form {
+    font: inherit;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+/* Layouts */
+
 body {
-    width: 90%;
+    width: 55%;
     margin: 0 auto;
     background: rgb(238, 238, 238);
 }
@@ -16,13 +75,22 @@ body {
     text-transform: uppercase;
 }
 
+.entry,
+.entry-title {
+    margin-bottom: 1rem;
+}
+
 .page {
     display: flex;
 }
 
-.entry,
-.entry-title {
-    margin-bottom: 1rem;
+.container {
+    width: 75%;
+    margin-right: 5%;
+}
+
+.site-sidebar {
+    width: 20%;
 }
 
 .container img {
@@ -37,12 +105,10 @@ article.secondary-article .entry-quotes {
     margin: 0 0 1em 1em;
     float: right;
 }
-
 article.secondary-article img {
     margin: 0 1em 1em 0;
     float: left;
 }
-
 .entry-quotes {
     width: 49%;
     padding-left: 1.5em;
@@ -50,26 +116,18 @@ article.secondary-article img {
     font-style: italic;
     color: rgba(0, 0, 0, 0.75);
 }
-
 .entry-quotes p:last-child {
     text-align: right;
 }
 
-@media (min-width: 1025px) {
-    body {
-        width: 55%;
-    }
+/* Navigation */
+
+.site-sidebar ul {
+    padding: 0 0 1rem 2rem;
+    list-style-type: square;
 }
 
-@media (max-width: 425px) {
-    article.main-article img,
-    article.secondary-article img,
-    article.secondary-article .entry-quotes {
-        float: none;
-    }
-
-    article.main-article img,
-    article.secondary-article img {
-        margin: 0 0 1em 0;
-    }
+.site-sidebar a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
 }

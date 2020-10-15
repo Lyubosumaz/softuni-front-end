@@ -17,3 +17,7 @@ ul {
 a {
     text-decoration: none;
 }
+
+p {
+    padding-bottom: 1rem;
+}
