@@ -1,0 +1,17 @@
+.title-styles > header {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.title-styles > header > h1 {
+    display: inline-block;
+}
+
+.title-styles > header > h1::after {
+    width: 2em;
+    margin: auto;
+    padding-bottom: 0.5em;
+    display: block;
+    content: "";
+    border-bottom: 0.075em solid #000;
+}

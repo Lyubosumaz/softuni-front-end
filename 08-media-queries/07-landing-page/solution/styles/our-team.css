@@ -1,0 +1,75 @@
+.our-team {
+    text-align: center;
+    box-shadow: inset 0 -1.25em 0.25em -1em rgba(0, 0, 0, 0.25);
+}
+
+.our-team-header {
+}
+
+.our-team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    margin-bottom: 4em;
+    flex: 0 0 25.5%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.card-avatar {
+    width: 8em;
+    height: 8em;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 2em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+.card-avatar::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 0.4em solid rgba(255, 255, 255, 0.5);
+}
+
+.card-avatar img.portrait {
+    width: 100%;
+    height: auto;
+}
+
+.card-avatar img.landscape {
+    width: auto;
+    height: 100%;
+}
+
+.card-avatar img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-name {
+}
+
+.card-position {
+    margin-bottom: 2em;
+    color: #333;
+    font-weight: normal;
+}
+
+.card-information {
+    max-width: 70%;
+    color: #1a1a1a;
+    font-style: italic;
+}

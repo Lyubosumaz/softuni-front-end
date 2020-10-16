@@ -1,0 +1,23 @@
+.sign-up-newsletter {
+    padding: 1.5em 0 3em 0;
+    background: #68347b;
+}
+
+.sign-up-newsletter-header {
+    color: #fff;
+}
+
+.title-styles > header.sign-up-newsletter-header {
+    margin-bottom: 2.5em;
+}
+
+.sign-up-newsletter-content {
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up-newsletter-content input {
+}
+
+.sign-up-newsletter-content button {
+}
