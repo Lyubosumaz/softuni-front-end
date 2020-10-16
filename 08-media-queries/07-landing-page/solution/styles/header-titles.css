@@ -10,8 +10,8 @@
 .title-styles > header > h1::after {
     width: 2em;
     margin: auto;
-    padding-bottom: 0.5em;
     display: block;
     content: "";
+    padding-bottom: 0.5em;
     border-bottom: 0.075em solid #000;
 }
