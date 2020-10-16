@@ -1,0 +1,17 @@
+body {
+    width: 80%;
+    max-width: 95em;
+    margin: 0 auto;
+    background: #fafafa;
+}
+
+.site-header {
+    margin: 1em 0 8em 0;
+}
+
+.need-a-website {
+    width: 80%;
+    max-width: 75em;
+    margin: 0 auto;
+    margin-bottom: 8em;
+}
