@@ -1,0 +1,48 @@
+@import url("reset.css");
+@import url("typography.css");
+body {
+    margin: 2.5em;
+    background: #eee;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    width: 33%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+}
+
+table thead {
+    background: #333;
+    color: #fff;
+}
+
+table tbody tr:nth-child(odd) {
+    background: #f1f1f1;
+}
+
+table tbody tr:nth-child(even) {
+    background: #fff;
+}
+
+@media (max-width: 425px) {
+    table thead {
+        display: none;
+    }
+
+    table td {
+        width: 100%;
+        display: inline-block;
+    }
+
+    table td::before {
+        padding-right: 1em;
+        content: attr(data-label);
+        display: inline-block;
+        font-weight: bold;
+    }
+}
