@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: 16px/1.5 Helvetica, sans-serif;
+}
+
+.timeline {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 2em 2em 0 2em;
+    text-align: center;
+    border: 0.3rem solid rgb(153, 153, 153);
+    position: relative;
+}
+
+.timeline::before {
+    display: block;
+    content: "";
+    border-right: 0.3rem solid rgb(153, 153, 153);
+    position: absolute;
+    top: 3.7em;
+    left: 0;
+    bottom: -1px;
+    right: 50%;
+}
+
+.timeline > header {
+    margin-bottom: 2em;
+    padding: 0.3em 1em;
+    display: inline-block;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 0.3em;
+}
+
+article {
+    width: 50%;
+    padding: 0 4em 0 2em;
+}
+
+article span {
+    font-weight: bold;
+}
+
+article header {
+    padding-bottom: 1em;
+    font-style: italic;
+    position: relative;
+}
+
+article header::before {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    content: "";
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.3rem solid rgb(153, 153, 153);
+    position: absolute;
+}
+
+article:nth-child(even) {
+    margin-left: auto;
+    text-align: left;
+}
+article:nth-child(even) header::before {
+    /* background: #048e03; */
+    background: rgb(4, 142, 3);
+    left: -3em;
+}
+
+article:nth-child(odd) {
+    text-align: right;
+    list-style-position: inside;
+}
+
+article:nth-child(odd) header::before {
+    /* background: #ff9a05; */
+    background: rgb(255, 154, 5);
+    right: -4.75em;
+}
