@@ -1,0 +1,50 @@
+ul.users-list {
+}
+
+ul.users-list li {
+}
+
+ul.users-list span {
+    display: block;
+}
+
+.user-avatar {
+    width: 10rem;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0.2em 1rem 0 rgba(0, 0, 0, 0.5);
+}
+
+.user-avatar::before,
+.user-avatar::after {
+    display: block;
+    content: "";
+}
+.user-avatar::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5) inset;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.user-avatar::after {
+    padding-top: 100%;
+}
+
+.user-avatar img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 5;
+}

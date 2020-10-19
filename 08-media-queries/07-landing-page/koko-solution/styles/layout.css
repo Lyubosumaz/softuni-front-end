@@ -1,0 +1,80 @@
+body {
+    background: #fff;
+}
+
+.wrapper {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.site-header {
+    padding-top: 2em;
+}
+
+.site-header .wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.site-header nav {
+    margin-left: auto;
+}
+
+.site-branding .site-title {
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+}
+
+.site-branding .site-title a {
+    color: purple;
+    text-decoration: none;
+}
+
+.site-footer {
+    padding-top: 2em;
+}
+
+.site-footer .wrapper {
+    display: flex;
+}
+
+.site-footer .widget {
+    flex-grow: 1;
+}
+
+.site-footer .widget:not(:last-child) {
+    padding-right: 2em;
+}
+
+.widget-sitemap {
+    flex-basis: 30%;
+}
+
+.widget-sitemap ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.widget-sitemap li {
+    display: block;
+    list-style: none outside;
+    flex: 0 0 48%;
+}
+
+.widget-contacts {
+    flex-basis: 30%;
+}
+
+.widget-contacts {
+    margin: 0;
+    padding: 0;
+}
+
+.widget-contacts li {
+    display: block;
+    list-style: none outside;
+}
