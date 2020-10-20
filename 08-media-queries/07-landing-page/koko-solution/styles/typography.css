@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,900;1,400;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,900;1,400;1,900&family=Roboto:ital,wght@0,400;0,900;1,400;1,900&display=swap");
+
 *,
 *::before,
 *::after {
@@ -8,7 +11,7 @@
 
 html {
     box-sizing: border-box;
-    font: 14px/1.5 Georgia, serif;
+    font: 14px/1.5 Fira Sans, Roboto, Georgia, serif;
 }
 
 @media (min-width: 600px) {
@@ -39,6 +42,7 @@ option {
     font: inherit;
 }
 
+.site-title,
 h1,
 h2,
 h3,
@@ -48,6 +52,7 @@ h6 {
     font-size: 1em;
     margin-bottom: 0.5em;
     font-weight: normal;
+    font-family: Merriweather, serif;
 }
 
 h1 {
