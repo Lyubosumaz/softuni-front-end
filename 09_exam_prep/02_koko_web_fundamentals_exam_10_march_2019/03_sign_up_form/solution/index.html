@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Forms</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <form action="#" method="GET">
+            <fieldset>
+                <legend>Contact Info</legend>
+
+                <p class="field-icon email">
+                    <input type="email" name="email" id="email" required />
+                    <label for="email"><span>Email</span></label>
+                </p>
+
+                <p class="field-icon pass">
+                    <input type="password" name="pass" id="pass" required />
+                    <label for="pass"><span>Password</span></label>
+                </p>
+
+                <!-- <p>
+					<textarea name="message" id="message" cols="30" rows="10"></textarea>
+				</p>
+
+				<p>
+					<input type="checkbox" name="contact-concent" id="contact-concent" />
+					<label for="contact-concent">Yes, I agree to be contacted</label>
+				</p>
+
+				<ul>
+					<li>
+						<input type="radio" name="options" id="option-1" />
+						<label for="option-1">Option 1</label>
+					</li>
+					<li>
+						<input type="radio" name="options" id="option-2" />
+						<label for="option-2">Option 2</label>
+					</li>
+					<li>
+						<input type="radio" name="options" id="option-3" />
+						<label for="option-3">Option 3</label>
+					</li>
+				</ul>
+
+				<p>
+					<select name="options-another" id="options-another">
+						<option value="">Please select...</option>
+						<option value="1111">First</option>
+						<option value="2222">Second</option>
+						<option value="3333">Third</option>
+					</select>
+				</p> -->
+
+                <p>
+                    <input type="submit" value="Send it!" />
+                    <!-- <input type="reset" value="Clear All" /> -->
+                </p>
+
+                <!-- file:///C:/contacts/new?
+                    name=sdsa
+                    &email=asdas%40asdasd
+                    &message=asdsadad
+                    &contact-concent=on
+                    &options=on
+                    &options-another=2222 -->
+            </fieldset>
+        </form>
+    </body>
+</html>

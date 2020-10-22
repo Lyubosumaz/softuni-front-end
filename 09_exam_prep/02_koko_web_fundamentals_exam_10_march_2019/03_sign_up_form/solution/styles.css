@@ -1,0 +1,170 @@
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+    font: 16px/1.5 Verdana, sans-serif;
+}
+
+body,
+form,
+select,
+input,
+textarea,
+option {
+    font: inherit;
+}
+
+body {
+    padding: 2rem;
+}
+
+form {
+    max-width: 30rem;
+    margin: 4rem auto;
+}
+
+form fieldset {
+    display: block;
+    border: 2px solid #999;
+    padding: 2rem;
+    border-radius: 0.3rem;
+}
+
+form fieldset p {
+    padding-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 1em;
+}
+
+form legend {
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 0 0.5rem;
+    margin-left: -0.5rem;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    padding-right: 1rem;
+    min-width: 10rem;
+    text-align: right;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    outline: none;
+}
+
+form input[type="password"],
+form input[type="email"],
+form input[type="text"] {
+    padding: 0.5rem 1rem;
+    border: 2px solid #999;
+    border-radius: 0.3rem;
+    border-left: 0;
+}
+
+form input[type="password"]:hover,
+form input[type="password"]:focus,
+form input[type="email"]:hover,
+form input[type="email"]:focus,
+form input[type="text"]:hover,
+form input[type="text"]:focus {
+    border-color: #369;
+}
+
+form input[type="submit"] {
+    padding: 0.5rem 1rem;
+    background: #369;
+    color: #fff;
+    border-radius: 0.3em;
+    border: 2px solid #369;
+    cursor: pointer;
+    margin-left: 10rem;
+}
+
+form input[type="submit"]:hover,
+form input[type="submit"]:focus {
+    border: 2px solid #369;
+    background: #fff;
+    color: #369;
+}
+
+form .field-icon {
+    display: flex;
+    align-items: stretch;
+}
+
+form .field-icon label {
+    order: 1;
+}
+
+form .field-icon input {
+    order: 2;
+}
+
+form .field-icon label {
+    min-width: auto;
+    background: #fff;
+    color: #999;
+    padding: 0 0 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #999;
+    border-right: 0;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+}
+
+form .field-icon label span {
+    position: absolute;
+    top: -1.5em;
+    left: 0;
+}
+
+form .field-icon label::before {
+    display: block;
+    content: "\f007";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+form .field-icon.email label::before {
+    content: "\f0e0";
+}
+
+form .field-icon.pass label::before {
+    content: "\f084";
+}
+
+form .field-icon input {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* it happens because of the sequence in the form */
+form .field-icon input:hover + label,
+form .field-icon input:focus + label {
+    border-color: #369;
+}
+
+form .field-icon input:focus + label::before,
+form .field-icon input:focus + label span {
+    color: #369;
+}
+
+form .field-icon input:required + label::before,
+form .field-icon input:required + label span {
+    color: #b00;
+}
