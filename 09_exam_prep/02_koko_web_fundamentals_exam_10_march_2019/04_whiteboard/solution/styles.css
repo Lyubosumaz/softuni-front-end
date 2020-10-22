@@ -10,7 +10,7 @@
 
 html {
     box-sizing: border-box;
-    font: 14px/1.5 Verdana, sans-serif;
+    font: 16px/1.5 Verdana, sans-serif;
 }
 
 body,
@@ -21,7 +21,7 @@ textarea {
 }
 
 .site {
-    max-width: 70em;
+    max-width: 85em;
     margin: 0 auto;
 }
 
@@ -75,6 +75,11 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 2em;
+}
+
+.cta .buttons {
+    margin: 0 0 1em 0;
 }
 
 .button {
@@ -86,4 +91,113 @@ textarea {
 
 .button-primary {
     background: aqua;
+    border-radius: 0.3em;
+    border: 2px solid transparent;
+}
+
+.button-primary:hover {
+    background: none;
+    border-color: #fff;
+}
+
+.section-with-image {
+    display: flex;
+}
+
+.section-with-image > div {
+    flex: 0 0 50%;
+}
+
+.section-with-image .media {
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-with-image .media img {
+    display: block;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-with-image .content {
+    padding: 2em 4em;
+}
+
+.list-checks {
+    padding: 2em;
+}
+
+.list-checks li {
+    padding-bottom: 1em;
+}
+
+.questions {
+    background: rgb(176, 242, 271);
+    padding: 2em 3em;
+}
+
+.questions h2 {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.questions ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.questions ul li {
+    list-style: none outside;
+    flex: 0 0 30%;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.questions ul li strong {
+    display: block;
+    font-size: 1.2em;
+}
+
+.questions p {
+    text-align: center;
+}
+
+.questions p a {
+    font-weight: bold;
+    color: #000;
+}
+
+.list-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 2em;
+}
+
+.list-icons li {
+    list-style: none outside;
+    display: block;
+    flex: 0 0 50%;
+    text-align: center;
+    color: rgb(0, 211, 141);
+    font-weight: normal;
+    margin-bottom: 2em;
+}
+
+.list-icons li img {
+    display: block;
+    margin: 0 auto 1em auto;
+    width: 70%;
+    height: auto;
+}
+
+section header.center {
+    text-align: center;
 }
