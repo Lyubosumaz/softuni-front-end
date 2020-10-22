@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.section-timeline {
+    margin: 2em;
+    border: 2px solid #000;
+    padding: 8em 2em 0 2em;
+    overflow-x: auto;
+    position: relative;
+}
+
+.section-timeline header {
+    position: fixed;
+    top: 4em;
+    left: 4em;
+    border: 2px solid #000;
+    padding: 1em;
+    border-radius: 0.3em;
+    max-width: 40%;
+    text-align: center;
+}
+
+ol.timeline {
+    display: flex;
+    padding-bottom: 2em;
+}
+
+ol.timeline li {
+    border-top: 2px solid #000;
+    flex: 0 0 20em;
+    display: block;
+    list-style: none outside;
+    padding: 2em 2em 0 0;
+    position: relative;
+}
+
+ol.timeline li:last-child {
+    border-color: transparent;
+}
+
+ol.timeline li::before {
+    display: block;
+    content: "";
+    width: 1em;
+    height: 1em;
+    background: green;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: calc((1em + 2px) / 2 * -1);
+    left: 0;
+}
+
+ol.timeline li:nth-child(even):before {
+    background: orange;
+}
+
+ol.timeline li strong.title {
+    display: block;
+    margin-bottom: 0.3em;
+}
