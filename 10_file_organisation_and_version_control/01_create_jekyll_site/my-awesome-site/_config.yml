@@ -21,6 +21,7 @@
 title: Koko
 email: Koko@example.com
 description: I'm lazy!
+destination: docs
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kdankov
@@ -49,3 +50,4 @@ exclude:
     - vendor/cache/
     - vendor/gems/
     - vendor/ruby/
+    - docs
