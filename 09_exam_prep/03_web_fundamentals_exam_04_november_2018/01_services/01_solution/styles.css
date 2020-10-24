@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: 18px/1.5 "Open Sans", sans-serif;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+.services-wrapper {
+    width: 65em;
+    margin: 0 auto;
+}
+
+.services-header,
+.services-description {
+    margin-bottom: 1em;
+}
+
+.services-header::after {
+    display: block;
+    content: "";
+    width: 7.5em;
+    height: 0.2em;
+    background: #34b1c4;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-card {
+    flex: 0 0 31%;
+    list-style: none outside;
+    border: 1px solid #ddd;
+}
+
+.services-card strong {
+    font-size: 1.6em;
+    font-weight: normal;
+}
+
+.services-card p {
+    font-size: 0.7rem;
+}
+
+.services-card span {
+    font-size: 0.9rem;
+}
+
+.card-line {
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+strong.card-line {
+    padding: 0.5rem 0;
+}
+
+p.card-line,
+span.card-line {
+    border-bottom: 1px dotted #ddd;
+}
+
+.card-line:nth-child(1) {
+    color: #fff;
+    background: #333;
+}
+
+.services-card:nth-child(even) .card-line:nth-child(1) {
+    background: #1996a9;
+}
+
+.card-line:nth-child(2) {
+    background: #f6f6f6;
+}
+
+.card-action {
+    display: flex;
+    justify-content: center;
+    padding: 1.5em 0;
+}
+
+.card-button {
+    background: #008cba;
+    font-size: 1.1rem;
+    color: #fff;
+    border-radius: 0.3em;
+    padding: 0.5em 1.5em;
+    border: 2px solid transparent;
+}
