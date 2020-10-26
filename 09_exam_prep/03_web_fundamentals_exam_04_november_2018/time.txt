@@ -1,7 +1,9 @@
 01_services => 24.10.2020 => 01_solution => 60 minutes
 
-02_css_advanced => 25.10.2020 => 01_solution => 1h and 17 minutes
+02_css_advanced => 25.10.2020 => 01_solution => 1h 17 minutes
 
-03_sign_up => 26.10.2020 => 01_solution => 1h and 17 minutes
+03_sign_up => 26.10.2020 => 01_solution => 1h 17 minutes
 
-04_in_time_agency =>  => 01_solution =>
+04_in_time_agency => 26.10.2020 => 01_solution => 3h 03 minutes
+
+Total time => 6h 37 minutes
