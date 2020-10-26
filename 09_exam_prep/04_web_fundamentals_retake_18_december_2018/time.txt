@@ -1,0 +1,4 @@
+01_london => => 01_solution => minutes
+02_vienna => => 01_solution => minutes
+03_milano => => 01_solution => minutes
+04_budapest => => 01_solution => minutes
