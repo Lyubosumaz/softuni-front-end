@@ -4,40 +4,55 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SoftUni</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
     </head>
     <body>
-        <section class="media">
-            <strong class="water-mark">SoftUni</strong>
-            <h1>Welcome to SoftUni.</h1>
-            <p>Are you ready to become a dev?</p>
-        </section>
-        <section class="form">
-            <form action="#" method="GET">
-                <p class="form-field">
-                    <label for="username">USERNAME</label>
-                    <input type="text" id="username" name="username" placeholder="antoniyaat" required />
-                </p>
+        <div class="softuni-form">
+            <section class="media">
+                <div class="media-wrapper">
+                    <strong class="water-mark">SoftUni</strong>
 
-                <p class="form-field">
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email" placeholder="a.atanasova@softuni.bg" required />
-                </p>
+                    <div class="media-content">
+                        <h1>Welcome to SoftUni.</h1>
+                        <p>Are you ready to become a dev?</p>
+                    </div>
 
-                <p class="form-field">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password" placeholder="********" required />
-                </p>
+                    <section class="media-icons">
+                        <div class="world"></div>
+                        <div class="github"></div>
+                        <div class="twitter"></div>
+                    </section>
+                </div>
+            </section>
+            <section class="form-container">
+                <form action="#" method="GET">
+                    <p class="form-field">
+                        <label for="username">USERNAME</label>
+                        <input type="text" id="username" name="username" placeholder="antoniyaat" required />
+                    </p>
 
-                <p class="form-field">
-                    <label for="repeat-password">REPEAT PASSWORD</label>
-                    <input type="password" id="repeat-password" name="repeat-password" placeholder="********" required />
-                </p>
+                    <p class="form-field">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" placeholder="a.atanasova@softuni.bg" required />
+                    </p>
 
-                <p class="form-action">
-                    <input type="submit" value="REGISTER" />
-                    <a href="#">I am already a ninja</a>
-                </p>
-            </form>
-        </section>
+                    <p class="form-field">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" placeholder="********" required />
+                    </p>
+
+                    <p class="form-field">
+                        <label for="repeat-password">REPEAT PASSWORD</label>
+                        <input type="password" id="repeat-password" name="repeat-password" placeholder="********" required />
+                    </p>
+
+                    <p class="form-action">
+                        <input type="submit" value="REGISTER" />
+                        <a href="#">I am already a ninja</a>
+                    </p>
+                </form>
+            </section>
+        </div>
     </body>
 </html>
