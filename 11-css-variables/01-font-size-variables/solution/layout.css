@@ -11,12 +11,30 @@
 html {
     box-sizing: border-box;
     font: var(--font-size-main, 16px) / 1.5 'Open Sans', sans-serif;
-    background: firebrick;
 }
 
-body,
-table,
-input,
-textarea {
-    font: inherit;
+h1 {
+    font-size: var(--font-size-large, 30px);
+}
+
+h3 {
+    font-size: var(--font-size-medium, 20px);
+    font-style: italic;
+}
+
+body {
+    max-width: 40.5em;
+    margin: 0 auto;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+header {
+    margin: 1em 0;
+}
+
+header > h1 {
+    text-align: center;
 }
