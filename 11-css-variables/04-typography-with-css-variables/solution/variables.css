@@ -1,0 +1,9 @@
+:root {
+    --site-breakpoint-mobile: 500px;
+    --site-breakpoint-tablet: 700px;
+    --site-breakpoint-desktop: 1600px;
+
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 18px;
+}
