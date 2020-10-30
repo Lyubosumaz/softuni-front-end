@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: 28px/1.5 'Open Sans', sans-serif;
+}
+
+.root {
+    height: 100vh;
+    position: relative;
+}
+
+.root ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.root li {
+    list-style: none outside;
+}
+
+.root a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #000;
+    animation: moveIn 0.3s ease-in-out;
+    animation-fill-mode: both;
+}
+
+.root li:nth-child(1) a {
+    animation-delay: 0.1s;
+}
+
+.root li:nth-child(2) a {
+    animation-delay: 0.2s;
+}
+
+.root li:nth-child(3) a {
+    animation-delay: 0.3s;
+}
+
+.root li:nth-child(4) a {
+    animation-delay: 0.4s;
+}
+
+.root li:nth-child(5) a {
+    animation-delay: 0.5s;
+}
+
+.root li:nth-child(6) a {
+    animation-delay: 0.6s;
+}
+
+.root li:nth-child(7) a {
+    animation-delay: 0.7s;
+}
+
+.root span {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.5em;
+    display: inline-block;
+    position: relative;
+}
+
+.root span::before {
+    display: inline-block;
+    content: '';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.root li:nth-child(1) span::before {
+    content: '\f6f1';
+}
+
+.root li:nth-child(2) span::before {
+    content: '\f468';
+}
+
+.root li:nth-child(3) span::before {
+    content: '\f562';
+}
+
+.root li:nth-child(4) span::before {
+    content: '\f1ad';
+}
+
+.root li:nth-child(5) span::before {
+    content: '\f573';
+}
+
+.root li:nth-child(6) span::before {
+    content: '\f508';
+}
+
+.root li:nth-child(7) span::before {
+    content: '\f07a';
+}
+
+@keyframes moveIn {
+    from {
+        transform: translateX(-3em);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
