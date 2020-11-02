@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+header,
+main,
+aside,
+footer {
+    padding: 1em;
+    background: #000;
+    color: #fff;
+}
+
+header,
+footer {
+    grid-column: 1 / -1;
+}
+
+main {
+    grid-column: 1 / span 2;
+}
+
+aside {
+    grid-column: 3 / -1;
+}
