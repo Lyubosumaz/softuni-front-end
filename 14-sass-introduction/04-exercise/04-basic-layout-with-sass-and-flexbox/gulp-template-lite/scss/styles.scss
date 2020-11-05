@@ -1,7 +1,123 @@
-$color: firebrick;
+:root {
+    --font-size-phone: 12px;
+    --font-size-mobile: 14px;
+    --font-size-laptop: 18px;
+    --font-size-desktop: 22px;
+}
 
-body {
-    color: white;
-    background: $color;
-    height: 400vh;
+@mixin break-point($point) {
+    @if $point == phone {
+        @media (max-width: 425px) {
+            @content;
+        }
+    } @else if $point == mobile {
+        @media (max-width: 768px) {
+            @content;
+        }
+    } @else if $point == laptop {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    } @else if $point == desktop {
+        @media (min-width: 1025px) {
+            @content;
+        }
+    }
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: var(--font-size-phone, 16px) / 1.5 'Helvetica', 'sans-serif';
+
+    @include break-point(desktop) {
+        & {
+            font-size: var(--font-size-desktop);
+        }
+    }
+
+    @include break-point(laptop) {
+        & {
+            font-size: var(--font-size-laptop);
+        }
+    }
+
+    @include break-point(mobile) {
+        & {
+            font-size: var(--font-size-mobile);
+        }
+    }
+
+    @include break-point(phone) {
+        & {
+            font-size: var(--font-size-phone);
+        }
+    }
+}
+
+.site {
+    $wite-space: 2.5em;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    &-header,
+    &-main,
+    &-sidebar,
+    &-footer {
+        padding: $wite-space;
+    }
+
+    &-header {
+        flex-basis: 100%;
+
+        border-bottom: 0.2em solid #111;
+
+        p {
+            font-style: italic;
+        }
+    }
+
+    &-main {
+        flex: 1 0 60%;
+
+        section + section {
+            margin-top: $wite-space;
+        }
+    }
+
+    &-sidebar {
+        flex: 1 0 30%;
+
+        nav {
+            margin-left: $wite-space;
+        }
+
+        li {
+            list-style: circle;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+
+    &-footer {
+        flex-basis: 100%;
+        border-top: 0.2em solid #111;
+    }
+
+    @include break-point(phone) {
+        & {
+            display: block;
+        }
+    }
 }
