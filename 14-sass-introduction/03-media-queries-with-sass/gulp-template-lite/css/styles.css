@@ -1,4 +1,40 @@
-body {
-  color: white;
-  background: firebrick;
-  height: 400vh; }
+:root {
+  --block-hight: 9em; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font: 16px/1.5 'Helvetica', 'sans-serif'; }
+
+.root {
+  margin: 0.5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--block-hight), 1fr));
+  justify-content: center;
+  gap: 0.5em; }
+  .root div {
+    height: var(--block-hight); }
+  @media (max-width: 1440px) {
+    .root div {
+      background: #777; } }
+  @media (max-width: 1024px) {
+    .root div {
+      background: #a00; } }
+  @media (max-width: 768px) {
+    .root div {
+      background: #369; } }
+  @media (max-width: 425px) {
+    .root div {
+      background: #bada55; } }
+  @media (min-width: 1441px) {
+    .root div {
+      background: #000; } }
+  @media (min-width: 2560px) {
+    .root div {
+      background: #0a0; } }

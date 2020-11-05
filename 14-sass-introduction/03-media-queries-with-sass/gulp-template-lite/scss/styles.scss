@@ -1,7 +1,92 @@
-$color: firebrick;
+:root {
+    --block-hight: 9em;
+}
 
-body {
-    color: white;
-    background: $color;
-    height: 400vh;
+@mixin break-point($point) {
+    @if $point == desktop-large {
+        @media (min-width: 2560px) {
+            @content;
+        }
+    } @else if $point == desktop {
+        @media (min-width: 1441px) {
+            @content;
+        }
+    } @else if $point == laptop-large {
+        @media (max-width: 1440px) {
+            @content;
+        }
+    } @else if $point == laptop {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    } @else if $point == tablet {
+        @media (max-width: 768px) {
+            @content;
+        }
+    } @else if $point == phone {
+        @media (max-width: 425px) {
+            @content;
+        }
+    }
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: 16px/1.5 'Helvetica', 'sans-serif';
+}
+
+.root {
+    margin: 0.5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--block-hight), 1fr));
+    justify-content: center;
+    gap: 0.5em;
+
+    div {
+        height: var(--block-hight);
+    }
+
+    @include break-point(laptop-large) {
+        div {
+            background: #777;
+        }
+    }
+
+    @include break-point(laptop) {
+        div {
+            background: #a00;
+        }
+    }
+
+    @include break-point(tablet) {
+        div {
+            background: #369;
+        }
+    }
+
+    @include break-point(phone) {
+        div {
+            background: #bada55;
+        }
+    }
+
+    @include break-point(desktop) {
+        div {
+            background: #000;
+        }
+    }
+
+    @include break-point(desktop-large) {
+        div {
+            background: #0a0;
+        }
+    }
 }
