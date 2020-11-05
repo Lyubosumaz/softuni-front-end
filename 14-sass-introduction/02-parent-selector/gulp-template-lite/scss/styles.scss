@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+}
+
+.such-nice-table {
+    border-collapse: collapse;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    th,
+    td {
+        padding: 1em;
+        border: 3px solid #777;
+    }
+
+    tr:nth-child(even) {
+        color: #333;
+        background-color: #aaa;
+    }
+
+    tr:nth-child(even) {
+        color: #ddd;
+        background-color: #222;
+    }
+
+    thead {
+        tr {
+            color: #777;
+            background-color: #ddd;
+        }
+    }
+
+    tbody {
+        td:nth-child(2) {
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) td:nth-child(2) {
+            color: #ccc;
+            background-color: #369;
+        }
+    }
+}
