@@ -1,4 +1,39 @@
-body {
-  color: white;
-  background: firebrick;
-  height: 400vh; }
+.items {
+  margin: 5em;
+  display: flex; }
+  .items li {
+    width: 10em;
+    height: 10em;
+    list-style: none outside;
+    position: relative; }
+  .items li + li {
+    margin-left: 2.5em; }
+  .items li::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    animation: slideDown 0.15s ease-in-out;
+    animation-fill-mode: both; }
+  .items li:nth-child(1):before {
+    animation-delay: 0.15s; }
+  .items li:nth-child(2):before {
+    animation-delay: 0.3s; }
+  .items li:nth-child(3):before {
+    animation-delay: 0.45s; }
+  .items li:nth-child(4):before {
+    animation-delay: 0.6s; }
+  .items li:nth-child(5):before {
+    animation-delay: 0.75s; }
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-5em);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }

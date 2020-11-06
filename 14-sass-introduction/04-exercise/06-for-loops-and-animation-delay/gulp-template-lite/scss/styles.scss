@@ -1,7 +1,45 @@
-$color: firebrick;
+.items {
+    margin: 5em;
+    display: flex;
 
-body {
-    color: white;
-    background: $color;
-    height: 400vh;
+    li {
+        width: 10em;
+        height: 10em;
+        list-style: none outside;
+        position: relative;
+    }
+
+    li + li {
+        margin-left: 2.5em;
+    }
+
+    li::before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #000;
+        animation: slideDown 0.15s ease-in-out;
+        animation-fill-mode: both;
+    }
+
+    @for $i from 1 to 6 {
+        li:nth-child(#{$i}):before {
+            animation-delay: $i * 0.15s;
+        }
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-5em);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
