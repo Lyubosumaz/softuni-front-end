@@ -1,7 +1,101 @@
-$color: firebrick;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
 
-body {
-    color: white;
-    background: $color;
-    height: 400vh;
+html {
+    box-sizing: border-box;
+}
+
+.root {
+    margin: 0.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .wrapper {
+        flex: 0 0 19.5%;
+    }
+
+    .wrapper div {
+        position: relative;
+
+        &.ratio-1x1::before,
+        &.ratio-16x9::before,
+        &.ratio-16x10::before,
+        &.ratio-9x16::before,
+        &.ratio-3x2::before,
+        &.ratio-2x3::before {
+            display: block;
+            content: '';
+            background: #000;
+        }
+
+        &.ratio-1x1::before {
+            padding-top: 100%;
+        }
+
+        &.ratio-16x9::before {
+            padding-top: 56.25%;
+        }
+
+        &.ratio-16x10::before {
+            padding-top: 62.5%;
+        }
+
+        &.ratio-9x16::before {
+            padding-top: 177.77%;
+        }
+
+        &.ratio-3x2::before {
+            padding-top: 66.66%;
+        }
+
+        &.ratio-2x3::before {
+            padding-top: 150%;
+        }
+
+        &.ratio-1x1::after,
+        &.ratio-16x9::after,
+        &.ratio-16x10::after,
+        &.ratio-9x16::after,
+        &.ratio-3x2::after,
+        &.ratio-2x3::after {
+            display: block;
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5em;
+            color: #fff;
+        }
+
+        &.ratio-1x1::after {
+            content: '1x1';
+        }
+
+        &.ratio-16x9::after {
+            content: '16x9';
+        }
+
+        &.ratio-16x10::after {
+            content: '16x10';
+        }
+
+        &.ratio-9x16::after {
+            content: '9x16';
+        }
+
+        &.ratio-3x2::after {
+            content: '3x2';
+        }
+
+        &.ratio-2x3::after {
+            content: '2x3';
+        }
+    }
 }

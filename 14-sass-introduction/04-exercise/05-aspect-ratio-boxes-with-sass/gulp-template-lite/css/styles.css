@@ -1,4 +1,56 @@
-body {
-  color: white;
-  background: firebrick;
-  height: 400vh; }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+.root {
+  margin: 0.5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .root .wrapper {
+    flex: 0 0 19.5%; }
+  .root .wrapper div {
+    position: relative; }
+    .root .wrapper div.ratio-1x1::before, .root .wrapper div.ratio-16x9::before, .root .wrapper div.ratio-16x10::before, .root .wrapper div.ratio-9x16::before, .root .wrapper div.ratio-3x2::before, .root .wrapper div.ratio-2x3::before {
+      display: block;
+      content: '';
+      background: #000; }
+    .root .wrapper div.ratio-1x1::before {
+      padding-top: 100%; }
+    .root .wrapper div.ratio-16x9::before {
+      padding-top: 56.25%; }
+    .root .wrapper div.ratio-16x10::before {
+      padding-top: 62.5%; }
+    .root .wrapper div.ratio-9x16::before {
+      padding-top: 177.77%; }
+    .root .wrapper div.ratio-3x2::before {
+      padding-top: 66.66%; }
+    .root .wrapper div.ratio-2x3::before {
+      padding-top: 150%; }
+    .root .wrapper div.ratio-1x1::after, .root .wrapper div.ratio-16x9::after, .root .wrapper div.ratio-16x10::after, .root .wrapper div.ratio-9x16::after, .root .wrapper div.ratio-3x2::after, .root .wrapper div.ratio-2x3::after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.5em;
+      color: #fff; }
+    .root .wrapper div.ratio-1x1::after {
+      content: '1x1'; }
+    .root .wrapper div.ratio-16x9::after {
+      content: '16x9'; }
+    .root .wrapper div.ratio-16x10::after {
+      content: '16x10'; }
+    .root .wrapper div.ratio-9x16::after {
+      content: '9x16'; }
+    .root .wrapper div.ratio-3x2::after {
+      content: '3x2'; }
+    .root .wrapper div.ratio-2x3::after {
+      content: '2x3'; }
